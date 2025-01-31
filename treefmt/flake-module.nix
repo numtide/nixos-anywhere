@@ -2,7 +2,7 @@
   imports = [
     inputs.treefmt-nix.flakeModule
   ];
-  perSystem = { config, pkgs, ... }: {
+  perSystem = { config, lib, pkgs, ... }: {
     treefmt = {
       projectRootFile = "flake.nix";
       programs.mdsh.enable = true;
